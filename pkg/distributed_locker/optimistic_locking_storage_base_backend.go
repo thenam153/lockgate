@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"lockgate"
+	"github.com/thenam153/lockgate"
 
-	"lockgate/pkg/distributed_locker/optimistic_locking_store"
-	"lockgate/pkg/util"
+	"github.com/thenam153/lockgate/pkg/distributed_locker/optimistic_locking_store"
+	"github.com/thenam153/lockgate/pkg/util"
 )
 
 type OptimisticLockingStorageBasedBackend struct {

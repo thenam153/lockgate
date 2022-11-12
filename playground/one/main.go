@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"lockgate/pkg/distributed_locker"
 	"os"
 	"time"
 
-	"lockgate"
+	"github.com/thenam153/lockgate/pkg/distributed_locker"
+
+	"github.com/thenam153/lockgate"
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 

@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"lockgate"
+	"github.com/thenam153/lockgate"
 )
 
 type DistributedLocker struct {

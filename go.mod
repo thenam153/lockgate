@@ -1,4 +1,4 @@
-module lockgate
+module github.com/thenam153/lockgate
 
 go 1.19
 

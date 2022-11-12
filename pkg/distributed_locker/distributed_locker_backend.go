@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"lockgate"
+	"github.com/thenam153/lockgate"
 
 	"github.com/google/uuid"
 )

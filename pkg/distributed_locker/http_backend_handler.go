@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"lockgate"
+	"github.com/thenam153/lockgate"
 
-	"lockgate/pkg/util"
+	"github.com/thenam153/lockgate/pkg/util"
 )
 
 func RunHttpBackendServer(ip, port string, backend DistributedLockerBackend) error {

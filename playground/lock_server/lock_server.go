@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"lockgate/pkg/distributed_locker/optimistic_locking_store"
+	"github.com/thenam153/lockgate/pkg/distributed_locker/optimistic_locking_store"
 
-	"lockgate/pkg/distributed_locker"
+	"github.com/thenam153/lockgate/pkg/distributed_locker"
 )
 
 func run() error {

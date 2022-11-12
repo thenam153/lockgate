@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"lockgate/pkg/file_locker"
 	"os"
 	"time"
 
-	"lockgate"
+	"github.com/thenam153/lockgate/pkg/file_locker"
+
+	"github.com/thenam153/lockgate"
 )
 
 func do() error {

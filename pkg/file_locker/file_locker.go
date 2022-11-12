@@ -5,10 +5,10 @@ import (
 	"os"
 	"sync"
 
-	"lockgate"
+	"github.com/thenam153/lockgate"
 
 	"github.com/google/uuid"
-	"lockgate/pkg/file_lock"
+	"github.com/thenam153/lockgate/pkg/file_lock"
 )
 
 type FileLocker struct {

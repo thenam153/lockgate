@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"lockgate/pkg/util"
+	"github.com/thenam153/lockgate/pkg/util"
 )
 
 var (

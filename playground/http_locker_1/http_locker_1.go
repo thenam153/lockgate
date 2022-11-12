@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"lockgate"
+	"github.com/thenam153/lockgate"
 
-	"lockgate/pkg/distributed_locker"
+	"github.com/thenam153/lockgate/pkg/distributed_locker"
 )
 
 func run() error {
