@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/werf/lockgate"
+	"lockgate"
 
 	"github.com/google/uuid"
 )

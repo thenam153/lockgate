@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"lockgate/pkg/distributed_locker"
 	"os"
 	"time"
 
-	"github.com/werf/lockgate"
+	"lockgate"
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
@@ -17,7 +18,7 @@ func do() error {
 		return fmt.Errorf("cannot initialize kube: %s", err)
 	}
 
-	locker := lockgate.NewKubernetesLocker(
+	locker := distributed_locker.NewKubernetesLocker(
 		kube.DynamicClient, schema.GroupVersionResource{
 			Group:    "",
 			Version:  "v1",

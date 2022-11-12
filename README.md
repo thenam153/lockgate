@@ -33,7 +33,7 @@ If you have an Open Source project using lockgate, feel free to list it here via
 # Installation
 
 ```
-go get -u github.com/werf/lockgate
+go get -u lockgate
 ```
 
 # Usage
@@ -53,7 +53,7 @@ This is a simple OS filesystem locks based locker. It can be used by multiple pr
 Create a file locker as follows:
 
 ```
-import "github.com/werf/lockgate"
+import "lockgate"
 
 ...
 
@@ -72,8 +72,8 @@ Create a Kubernetes locker as follows:
 
 ```
 import (
-	"github.com/werf/lockgate"
-	"github.com/werf/lockgate/pkg/distributed_locker"
+	"lockgate"
+	"lockgate/pkg/distributed_locker"
 )
 
 ...
@@ -98,8 +98,8 @@ Create a HTTP locker as follows:
 
 ```
 import (
-	"github.com/werf/lockgate"
-	"github.com/werf/lockgate/pkg/distributed_locker"
+	"lockgate"
+	"lockgate/pkg/distributed_locker"
 )
 
 ...
@@ -120,9 +120,9 @@ Run a lockgate HTTP lock server as follows:
 
 ```
 import (
-	"github.com/werf/lockgate"
-	"github.com/werf/lockgate/pkg/distributed_locker"
-	"github.com/werf/lockgate/pkg/distributed_locker/optimistic_locking_store"
+	"lockgate"
+	"lockgate/pkg/distributed_locker"
+	"lockgate/pkg/distributed_locker/optimistic_locking_store"
 )
 
 ...
@@ -145,8 +145,8 @@ In the following example, a `locker` object instance is created using one of the
 
 ```
 import (
-	"github.com/werf/lockgate"
-	"github.com/werf/lockgate/pkg/distributed_locker"
+	"lockgate"
+	"lockgate/pkg/distributed_locker"
 )
 
 func main() {
@@ -214,6 +214,6 @@ func main() {
 
 # Community
 
-Please feel free to reach us via [project's Discussions](https://github.com/werf/lockgate/discussions) and [werf's Telegram group](https://t.me/werf_io) (there's [another one in Russian](https://t.me/werf_ru) as well).
+Please feel free to reach us via [project's Discussions](https://lockgate/discussions) and [werf's Telegram group](https://t.me/werf_io) (there's [another one in Russian](https://t.me/werf_ru) as well).
 
 You're also welcome to follow [@werf_io](https://twitter.com/werf_io) to stay informed about all important news, articles, etc.

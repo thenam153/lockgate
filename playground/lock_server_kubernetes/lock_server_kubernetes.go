@@ -8,9 +8,9 @@ import (
 
 	"github.com/werf/kubedog/pkg/kube"
 
-	"github.com/werf/lockgate/pkg/distributed_locker/optimistic_locking_store"
+	"lockgate/pkg/distributed_locker/optimistic_locking_store"
 
-	"github.com/werf/lockgate/pkg/distributed_locker"
+	"lockgate/pkg/distributed_locker"
 )
 
 func run() error {

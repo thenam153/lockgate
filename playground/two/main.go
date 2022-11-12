@@ -2,24 +2,23 @@ package main
 
 import (
 	"fmt"
+	"lockgate/pkg/file_locker"
 	"os"
 	"time"
 
-	"github.com/werf/lockgate"
-
-	"github.com/werf/kubedog/pkg/kube"
+	"lockgate"
 )
 
 func do() error {
-	if err := kube.Init(kube.InitOptions{}); err != nil {
-		return fmt.Errorf("cannot initialize kube: %s", err)
-	}
+	// if err := kube.Init(kube.InitOptions{}); err != nil {
+	// 	return fmt.Errorf("cannot initialize kube: %s", err)
+	// }
 
-	if locker, err := lockgate.NewFileLocker("/tmp/locks"); err != nil {
+	if locker, err := file_locker.NewFileLocker("/tmp/locks"); err != nil {
 		return fmt.Errorf("init error: %s", err)
 	} else {
 		if _, lock, err := locker.Acquire("mylock", lockgate.AcquireOptions{
-			OnWaitFunc: func(_ lockgate.LockHandle, doWait func() error) error {
+			OnWaitFunc: func(_ string, doWait func() error) error {
 				fmt.Printf("WAITING!\n")
 				defer fmt.Printf("DONE!")
 				return doWait()

@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/werf/lockgate/pkg/util"
+	"lockgate/pkg/util"
 )
 
 var (

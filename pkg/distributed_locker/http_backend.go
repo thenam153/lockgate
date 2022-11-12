@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/werf/lockgate"
+	"lockgate"
 
-	"github.com/werf/lockgate/pkg/util"
+	"lockgate/pkg/util"
 )
 
 type HttpBackend struct {

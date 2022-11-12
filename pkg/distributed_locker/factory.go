@@ -1,9 +1,9 @@
 package distributed_locker
 
 import (
-	"github.com/werf/lockgate/pkg/distributed_locker/optimistic_locking_store"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/dynamic"
+	"lockgate/pkg/distributed_locker/optimistic_locking_store"
 )
 
 func NewKubernetesLocker(kubernetesInterface dynamic.Interface, gvr schema.GroupVersionResource, resourceName string, namespace string) *DistributedLocker {
